@@ -30,6 +30,10 @@ main {
     cursor: pointer;
 }
 
+.hero-content button:hover {
+    background-color: olive;
+  }
+
 .about,
 .projects {
     margin-top: 4rem;
