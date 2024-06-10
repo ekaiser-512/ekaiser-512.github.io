@@ -1,0 +1,67 @@
+.about {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center the heading */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    text-align: center; /* Center text for better alignment */
+}
+
+.about-text {
+    flex: 1;
+    margin-bottom: 2rem; /* Space between text and image */
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Better line spacing for readability */
+    color: #555; /* Softer text color */
+    margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+.about-image {
+    width: 150px; /* Set a fixed width for the image container */
+    height: 150px; /* Set a fixed height for the image container */
+    overflow: hidden; /* Ensure the image does not overflow the container */
+    border-radius: 50%; /* Make the container circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-image img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: 100%; /* Make the image take up the full height of its container */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.about-button {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .about-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: salmon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .about-button button:hover {
+    background-color: olive;
+  }
