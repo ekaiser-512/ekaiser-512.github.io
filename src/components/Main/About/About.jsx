@@ -26,7 +26,7 @@ const About = () => {
         </p>
         <p>
           Outside of her professional life, she enjoys time with her husband and daughter. She also
-          happens to be a master at crochet and loves to bake. During the fall, you can catch
+          happens to be a crochet expert and loves to bake. During the fall, you can catch
           her spending her Sundays cheering on the Kansas City Chiefs.
         </p>
       </div>

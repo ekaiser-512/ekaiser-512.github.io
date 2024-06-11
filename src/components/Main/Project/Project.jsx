@@ -1,10 +1,12 @@
 import ProjectCard from "../../ProjectCard/ProjectCard";
+import '../../../assets/Rally-Project1.mov';
 
 const Project = () => {
   const projectCardData = [
     {
-      projectName: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      videoSrc: '../../../assets/Rally-Project1.mov',
+      projectName: "Inclusive Blog",
+      description: "Utilized Javascript, HTML and CSS to create an inclusive blog for parents returning to work after parental leave",
     },
     {
       projectName: "Project 2",
@@ -33,7 +35,7 @@ const Project = () => {
       <div className="project-grid">
         {projectCardData.map((project, index) => {
           return (
-            <ProjectCard key={index} image={project.image} alt={project.alt} projectName={project.projectName} description={project.description}/>
+            <ProjectCard key={index} videoSrc={project.videoSrc} projectName={project.projectName} description={project.description}/>
           );
         })}
       </div>

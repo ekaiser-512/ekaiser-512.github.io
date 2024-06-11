@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .about {
     margin-top: 4rem;
     padding: 2rem;
-    background-color: #f9f9f9; /* Light background color for contrast */
-    border-radius: 8px; /* Rounded corners for a modern look */
+    background-color: #fff; /* Match main background */
+    border-radius: 10px; /* Match main border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #444; /* Softer text color */
 }
 
 .about h2 {
     font-size: 2.5rem;
-    color: #333; /* Darker color for better readability */
+    color: #444; /* Softer text color */
     margin-bottom: 1.5rem;
     text-align: center; /* Center the heading */
+    font-family: 'Pacifico', cursive; /* Playful font */
 }
 
 .about-content {
@@ -18,14 +22,18 @@
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center;
     text-align: center; /* Center text for better alignment */
+    gap: 2rem; /* Consistent spacing */
 }
 
 .about-text {
     flex: 1;
     margin-bottom: 2rem; /* Space between text and image */
+    font-size: 1.1rem;
+    line-height: 1.6; /* Better line spacing for readability */
 }
 
 .about-text p {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     line-height: 1.6; /* Better line spacing for readability */
     color: #555; /* Softer text color */
@@ -44,24 +52,28 @@
     width: 100%; /* Make the image take up the full width of its container */
     height: 100%; /* Make the image take up the full height of its container */
     object-fit: cover; /* Ensure the image covers the container */
+    margin: auto;
 }
 
 .about-button {
     display: flex;
     text-align: center;
     margin-top: 20px;
-  }
-  
-  .about-button button {
+}
+
+.about-button button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: salmon;
+    background-color: #ff6b6b; /* Match button background */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* Match button border radius */
     cursor: pointer;
-  }
-  
-  .about-button button:hover {
-    background-color: olive;
-  }
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: Arial, sans-serif; /* Match main font */
+}
+
+.about-button button:hover {
+    background-color: #e63946; /* Match button hover background */
+    transform: scale(1.05);
+}

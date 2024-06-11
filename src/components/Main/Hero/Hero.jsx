@@ -23,8 +23,10 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="hero-content">
-          <h1>Emily Kaiser</h1>
+          <h1>Emily's Portfolio</h1>
+          {!showProjects && (
           <button onClick={handleButtonClick}>Check out my Work</button>
+        )}
         </div>
       </section>
       {showProjects && <Project />}

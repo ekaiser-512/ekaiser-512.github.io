@@ -1,11 +1,50 @@
 .project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
     background-color: #F5CAC3;
-    color: olive;
+    color: rgb(65, 65, 65);
     padding: 1rem;
     text-align: center;
   }
   
-  .project-card img {
+  .project-video {
     width: 100%;
     height: auto;
+  }
+  
+  .project-card:hover .project-video {
+    display: block;
+  }
+
+  .project-card.expanded {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    max-height: 450px;
+    margin: auto;
+    z-index: 1000;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card.expanded .project-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .project-card.expanded h3, 
+  .project-card.expanded p {
+    display: none; /* Hide text when expanded */
   }

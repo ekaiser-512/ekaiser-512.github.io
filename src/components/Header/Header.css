@@ -1,30 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /* Header styles */
 header {
-    background-color: salmon;
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* Match the gradient background from main.css */
     width: 100%;
     color: white;
     text-align: center;
-  }
-  
-  nav {
+    padding: 1rem 0; /* Add padding for spacing */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    position: relative; /* Position relative for pseudo-elements */
+    overflow: hidden; /* Ensure the wave is contained within the header */
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(255, 126, 95, 0.3);
+    z-index: -1;
+    border-radius: 15px; /* Match the hero section styling */
+}
+
+header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px; /* Adjust as necessary */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust as necessary */
+    background: url('data:image/svg+xml;base64,PCEtLU...') repeat-x; /* Base64 encoded SVG */
+    background-size: cover;
+    z-index: 1;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 1rem;
-  }
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content */
+    padding: 0 2rem; /* Add padding for spacing */
+}
 
-  nav ul li:hover {
-    color: olive;
-  }
+.logo a {
+    font-size: 2rem; /* Adjust font size for better visibility */
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; /* Playful font */
+    color: white; /* Ensure color consistency */
+    text-decoration: none; /* Remove underline from link */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin-left: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem; /* Match font size */
+    line-height: 1.6; /* Consistent line height */
+    color: white; /* Ensure color consistency */
+}
+
+nav ul li a {
+    color: white; /* Ensure color consistency */
+    text-decoration: none; /* Remove underline from link */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li:hover a {
+    color: #e63946; /* Match hover color from main.css */
+}
