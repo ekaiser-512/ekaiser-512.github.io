@@ -19,3 +19,34 @@ a {
 ul {
   list-style: none;
 }
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .about-content,
+  .projects-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
