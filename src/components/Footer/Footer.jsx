@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4>Call me, beep me</h4>
                     <p>ekaiser@indeed.com</p>
-                    <p> phone: not your business, friend</p>
+                    <p> phone: not your business, friend - this is the internet</p>
                 </div>
                 <div className="social-links">
                         {socials.map((item, index) => (

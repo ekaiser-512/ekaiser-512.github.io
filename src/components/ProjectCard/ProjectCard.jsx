@@ -1,42 +1,18 @@
-import "./ProjectCard.css";
-import React, { useRef, useState } from 'react';
+import React from 'react';
+import './ProjectCard.css';
 
-const ProjectCard = ({videoSrc, projectName, description}) => {
-  const videoRef = useRef(null);
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleMouseEnter = () => {
-    if (videoRef.current && !isExpanded) {
-      videoRef.current.play();
-    }
+const ProjectCard = ({ projectName, description, videoSrc, isExpanded, onCardClick }) => {
+  const handleCloseClick = (e) => {
+    e.stopPropagation(); // Prevent triggering the card click event
+    onCardClick();
   };
-
-  const handleMouseLeave = () => {
-    if (videoRef.current && !isExpanded) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  };
-
-  const handleCardClick = () => {
-    setIsExpanded(!isExpanded);
-    if(!isExpanded &&videoRef.current) {
-      videoRef.current.play();
-    } else if (isExpanded && videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  }
 
   return (
-    <div className={`project-card ${isExpanded ? 'expanded' : ''}`}
-      onMouseEnter={handleMouseEnter} 
-      onMouseLeave={handleMouseLeave} 
-      onClick={handleCardClick}>
-        
-      <video ref={videoRef} className="project-video" src= {videoSrc} muted loop></video>
+    <div className={`project-card ${isExpanded ? 'expanded' : ''}`} onClick={onCardClick}>
+      {isExpanded && <button className="close-button" onClick={handleCloseClick}>×</button>}
       <h3>{projectName}</h3>
       <p>{description}</p>
+      {isExpanded && <video className="project-video" src={videoSrc} controls />}
     </div>
   );
 };

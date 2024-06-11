@@ -41,18 +41,20 @@
 }
 
 .about-image {
-    width: 150px; /* Set a fixed width for the image container */
-    height: 150px; /* Set a fixed height for the image container */
+    width: 250px; /* Set a fixed width for the image container */
+    height: 250px; /* Set a fixed height for the image container */
     overflow: hidden; /* Ensure the image does not overflow the container */
     border-radius: 50%; /* Make the container circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-image img {
     width: 100%; /* Make the image take up the full width of its container */
-    height: 100%; /* Make the image take up the full height of its container */
+    height: auto;
     object-fit: cover; /* Ensure the image covers the container */
-    margin: auto;
 }
 
 .about-button {

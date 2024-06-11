@@ -1,7 +1,7 @@
+import React, {useState} from 'react';
 import ProjectCard from "../../ProjectCard/ProjectCard";
 import '../../../assets/Rally-Project1.mov';
 
-const Project = () => {
   const projectCardData = [
     {
       videoSrc: '../../../assets/Rally-Project1.mov',
@@ -29,18 +29,31 @@ const Project = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     }
   ];
+
+  const Project = () => {
+    const [expandedProject, setExpandedProject] = useState(null);
+
+    const handleCardClick = (index) => {
+      setExpandedProject(expandedProject === index ? null : index);
+    };
+
   return (
     <section className="projects" id="projects">
-      <h2>My Portfolio</h2>
       <div className="project-grid">
         {projectCardData.map((project, index) => {
           return (
-            <ProjectCard key={index} videoSrc={project.videoSrc} projectName={project.projectName} description={project.description}/>
+            <ProjectCard 
+              key={index} 
+              videoSrc={project.videoSrc} 
+              projectName={project.projectName} 
+              description={project.description}
+              isExpanded={expandedProject === index}
+              onCardClick={() => handleCardClick(index)}
+              />
           );
         })}
       </div>
     </section>
   );
 };
-
 export default Project;
