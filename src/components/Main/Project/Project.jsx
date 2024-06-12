@@ -4,27 +4,33 @@ import '../../../assets/Rally.mp4';
 
   const projectCardData = [
     {
+      projectId: 1,
       videoSrc: '../../../assets/Rally.mp4',
       projectName: "Inclusive Blog",
       description: "Utilized Javascript, HTML and CSS to create an inclusive blog for parents returning to work after parental leave",
     },
     {
+      projectId: 2,
       projectName: "Project 2",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
+      projectId: 3,
       projectName: "Project 3",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
+      projectId: 4,
       projectName: "Project 4",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
+      projectId: 5,
       projectName: "Project 5",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
+      projectId: 6,
       projectName: "Project 6",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     }

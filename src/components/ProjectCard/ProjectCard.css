@@ -1,6 +1,5 @@
 .project-card {
   position: relative;
-  overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
   background-color: #F5CAC3;
@@ -15,19 +14,11 @@
   display: none;
 }
 
-.project-card:not(.expanded):hover h3 {
-  color: white;
-}
-
-.project-card:not(.expanded):hover .project-video {
-  display: block;
-}
-
 .project-card.expanded {
   width: 80%;
   max-width: 800px;
   height: auto;
-  max-height: 450px;
+  max-height: 650px;
   margin: auto;
   z-index: 1000;
   background-color: #000;
@@ -36,13 +27,15 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
   transition: none; /* Disable transition in expanded state */
-  cursor: default; /* Disable cursor change in expanded state */
+  /* cursor: default; Disable cursor change in expanded state */
 }
 
 .project-card.expanded .project-video {
@@ -53,7 +46,7 @@
 
 .project-card.expanded h3, 
 .project-card.expanded p {
-  display: none; /* Hide text when expanded */
+  display: flex;
 }
 
 .close-button {
@@ -71,3 +64,12 @@
   text-align: center;
   line-height: 30px;
 }
+
+
+
+
+
+
+ /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */

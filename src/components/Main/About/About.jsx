@@ -9,6 +9,10 @@ const About = () => {
     window.open('/EmilyKaiserResume2024.pdf', '_blank');
   };
 
+  const handleKPIButtonClick = () => {
+    window.open();
+  }
+
   return (
     <section className="about" id="about">
     <h2>About Me</h2>
@@ -35,6 +39,9 @@ const About = () => {
       </div>
       <div className="about-button">
         <button onClick={handleButtonClick}>View My Resume</button>
+      </div>
+      <div className="about-button">
+        <button onClick={handleKPIButtonClick}>General Assembly Stats</button>
       </div>
     </div>
   </section>
