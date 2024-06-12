@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import ProjectCard from "../../ProjectCard/ProjectCard";
-import '../../../assets/Rally-Project1.mov';
+import '../../../assets/Rally.mp4';
 
   const projectCardData = [
     {
-      videoSrc: '../../../assets/Rally-Project1.mov',
+      videoSrc: '../../../assets/Rally.mp4',
       projectName: "Inclusive Blog",
       description: "Utilized Javascript, HTML and CSS to create an inclusive blog for parents returning to work after parental leave",
     },
