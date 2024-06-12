@@ -17,11 +17,11 @@ const About = () => {
         <p>
           Emily is a software developer with expertise in Java, 
           Javascript, Spring, React, HTML/CSS and various back-end technologies. 
-          She loves to build out programs that the wow the user.
+          She loves to build out programs that wow the user.
         </p>
         <p>
           With additional education in advertising and graphic design as well
-          as professional experience in enterprise sales, She's sure
+          as professional experience in enterprise sales, she's sure
           to create clean and scalable code with the end user in mind.
         </p>
         <p>
