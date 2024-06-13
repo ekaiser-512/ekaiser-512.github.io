@@ -8,12 +8,14 @@ import Rally from '../../../../public/videos/Rally.mp4';
       videoSrc: '/videos/Rally.mp4',
       projectName: "Inclusive Blog",
       description: "Utilized Javascript, HTML and CSS to create an inclusive blog for parents returning to work after parental leave",
+      githubLink: 'https://github.com/ekaiser-512/Rally-',
     },
     {
       projectId: 2,
-      projectName: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      projectName: "Capstone - Recipedia",
+      description: "Fullstack Culmimatiom of all things learned during General Assembly bootcamp. ",
     },
+
     {
       projectId: 3,
       projectName: "Project 3",
@@ -53,6 +55,7 @@ import Rally from '../../../../public/videos/Rally.mp4';
               videoSrc={project.videoSrc} 
               projectName={project.projectName} 
               description={project.description}
+              githubLink={project.githubLink}
               isExpanded={expandedProject === index}
               onCardClick={() => handleCardClick(index)}
               />

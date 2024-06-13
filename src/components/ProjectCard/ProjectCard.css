@@ -11,7 +11,7 @@
 .project-card .project-video {
   width: 100%;
   height: auto;
-  display: none;
+  display: block; /* Ensure video is visible by default */
 }
 
 .project-card.expanded {
@@ -35,7 +35,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: auto;
   transition: none; /* Disable transition in expanded state */
-  /* cursor: default; Disable cursor change in expanded state */
+}
+
+.project-card.expanded:hover {
+  background-color: #000; /* Maintain black background on hover */
+  transition: none; /* Remove transition on hover */
 }
 
 .project-card.expanded .project-video {
@@ -65,11 +69,27 @@
   line-height: 30px;
 }
 
+.github-button-link {
+  text-decoration: none;
+  margin-top: 15px;
+  z-index: 2;
+  position: relative;
+}
 
+.github-button {
+  color: white;
+  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+  padding: 0.5rem 1rem; /* Smaller padding */
+  border-radius: 20px; /* Smaller border radius */
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem; /* Smaller font size */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 10px;
+}
 
-
-
-
- /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
+.github-button:hover {
+  background-color: #e63946;
+  transform: scale(1.05);
+  margin-bottom: 10px;
+}
