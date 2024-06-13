@@ -6,12 +6,14 @@
   color: rgb(65, 65, 65);
   padding: 1rem;
   text-align: center;
+  z-index: 1;
 }
 
 .project-card .project-video {
   width: 100%;
   height: auto;
   display: block; /* Ensure video is visible by default */
+  z-index: 1001;
 }
 
 .project-card.expanded {
