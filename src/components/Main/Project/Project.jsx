@@ -5,7 +5,7 @@ import Rally from '../../../../public/videos/Rally.mp4';
   const projectCardData = [
     {
       projectId: 1,
-      videoSrc: '/videos/Raly.mp4',
+      videoSrc: '/videos/Rally.mp4',
       projectName: "Inclusive Blog",
       description: "Utilized Javascript, HTML and CSS to create an inclusive blog for parents returning to work after parental leave",
     },
