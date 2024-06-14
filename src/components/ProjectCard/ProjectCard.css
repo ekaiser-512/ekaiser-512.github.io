@@ -37,6 +37,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: auto;
   transition: none; /* Disable transition in expanded state */
+  cursor: pointer;
 }
 
 .project-card.expanded:hover {
@@ -53,6 +54,7 @@
 .project-card.expanded h3, 
 .project-card.expanded p {
   display: flex;
+  z-index: 1001;
 }
 
 .close-button {
@@ -94,4 +96,17 @@
   background-color: #e63946;
   transform: scale(1.05);
   margin-bottom: 10px;
+}
+.project-card h3 {
+  color: black;
+  z-index: 1000;
+}
+
+.project-card:hover h3 {
+  color: black;
+  z-index: 1001;
+}
+
+.project-card.expanded h3 {
+  color: #e63946;
 }
