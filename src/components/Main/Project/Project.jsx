@@ -14,17 +14,22 @@ import Rally from '../../../../public/videos/Rally.mp4';
       projectId: 2,
       projectName: "Capstone - Recipedia",
       description: "Fullstack Culmimatiom of all things learned during General Assembly bootcamp. ",
+      githubLink: 'https://github.com/ekaiser-512/Capstone-Recipedia',
     },
 
     {
       projectId: 3,
-      projectName: "Project 3",
+      projectName: "SpringBook and Microservice",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      githubLink: 'https://github.com/ekaiser-512/Capstone-Recipedia',
     },
+
     {
       projectId: 4,
-      projectName: "Project 4",
+      projectName: "Java Dictionary App",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      githubLink: 'https://github.com/ekaiser-512/java-dictionary',
+
     },
     {
       projectId: 5,
