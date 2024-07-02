@@ -19,9 +19,9 @@ import Rally from '../../../../public/videos/Rally.mp4';
 
     {
       projectId: 3,
-      projectName: "SpringBook and Microservice",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      githubLink: 'https://github.com/ekaiser-512/Capstone-Recipedia',
+      projectName: "Inclusive Blog Backend",
+      description: "Creating an example of what a backend would potentially look like for Rally utilizing Springboot and A Notification MicroService",
+      githubLink: 'https://github.com/ekaiser-512/InclusiveBlogBackend',
     },
 
     {
@@ -34,12 +34,14 @@ import Rally from '../../../../public/videos/Rally.mp4';
     {
       projectId: 5,
       projectName: "Project 5",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Partner project with Zach Kapalka to create an app that utilizes CRUD functionality. ",
+      githubLink: 'https://github.com/ekaiser-512/LeagueManagerApp',
     },
     {
       projectId: 6,
-      projectName: "Project 6",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      projectName: "Portfolio Code",
+      description: "curious about the code for this site? Check it out here",
+      githubLink: 'https://github.com/ekaiser-512/ekaiser-512.github.io',
     }
   ];
 
