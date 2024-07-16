@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ projectName, description, githubLink, videoSrc, isExpanded, onCardClick }) => {
-  
+
   const handleCloseClick = (e) => {
     e.stopPropagation(); // Prevent triggering the card click event
     onCardClick();
