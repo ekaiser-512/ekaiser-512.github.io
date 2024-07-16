@@ -13,7 +13,7 @@ const projectCardData = [
   {
     projectId: 2,
     projectName: "Capstone - Recipedia",
-    description: "Fullstack Culmimatiom of all things learned during General Assembly bootcamp including both front and back ends as well as Spring Security and password encryption. ",
+    description: "Fullstack Culmimatiom of all things learned during General Assembly bootcamp including Spring Security and password encryption. ",
     githubLink: 'https://github.com/ekaiser-512/Capstone-Recipedia',
   },
 
