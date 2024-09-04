@@ -117,4 +117,5 @@
 
 .project-card.expanded h3 {
   color: #e63946;
+  z-index: 900;
 }
