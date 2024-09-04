@@ -6,7 +6,7 @@ import './About.css'; // Import the new CSS file
 const About = () => {
 
   const handleButtonClick = () => {
-    window.open(EKResume2024, '_blank');
+    window.open('EKResume2024.pdf', '_blank');
   };
 
   const handleKPIButtonClick = () => {
@@ -20,7 +20,7 @@ const About = () => {
         <div className="about-text">
           <p>
             Emily is a software developer with expertise in Java,
-            Javascript, Spring, React, HTML/CSS and various back-end technologies.
+            Javascript, Spring, React, HTML/CSS and SQL.
             She loves to build out applications that wow the user.
           </p>
           <p>
