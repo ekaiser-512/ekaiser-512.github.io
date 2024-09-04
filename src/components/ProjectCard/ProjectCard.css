@@ -108,15 +108,12 @@
 
 .project-card h3 {
   color: black;
-  z-index: 1005;
 }
 
 .project-card:hover h3 {
   color: black;
-  z-index: 1005;
 }
 
 .project-card.expanded h3 {
   color: #e63946;
-  z-index: 900;
 }
