@@ -1,12 +1,12 @@
 import React from 'react';
 import IMG_1341 from '../../../assets/IMG_1341.jpg';
-import EmilyKaiserResume2024 from '../../../../public/EmilyKaiserResume2024.pdf'
+import EKResume2024 from '../../../../public/EKResume2024.pdf'
 import './About.css'; // Import the new CSS file
 
 const About = () => {
 
   const handleButtonClick = () => {
-    window.open('/EmilyKaiserResume2024.pdf', '_blank');
+    window.open('/EKResume2024.pdf', '_blank');
   };
 
   const handleKPIButtonClick = () => {
