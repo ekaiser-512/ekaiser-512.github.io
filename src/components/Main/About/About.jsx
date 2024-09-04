@@ -6,7 +6,7 @@ import './About.css'; // Import the new CSS file
 const About = () => {
 
   const handleButtonClick = () => {
-    window.open('/EKResume2024.pdf', '_blank');
+    window.open(EKResume2024, '_blank');
   };
 
   const handleKPIButtonClick = () => {
