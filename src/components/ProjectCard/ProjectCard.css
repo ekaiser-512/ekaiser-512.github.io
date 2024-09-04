@@ -12,7 +12,8 @@
 .project-card .project-video {
   width: 100%;
   height: auto;
-  display: block; /* Ensure video is visible by default */
+  display: block;
+  /* Ensure video is visible by default */
   z-index: 1001;
 }
 
@@ -36,13 +37,16 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: auto;
-  transition: none; /* Disable transition in expanded state */
+  transition: none;
+  /* Disable transition in expanded state */
   cursor: pointer;
 }
 
 .project-card.expanded:hover {
-  background-color: #000; /* Maintain black background on hover */
-  transition: none; /* Remove transition on hover */
+  background-color: #000;
+  /* Maintain black background on hover */
+  transition: none;
+  /* Remove transition on hover */
 }
 
 .project-card.expanded .project-video {
@@ -51,7 +55,7 @@
   height: 100%;
 }
 
-.project-card.expanded h3, 
+.project-card.expanded h3,
 .project-card.expanded p {
   display: flex;
   z-index: 1001;
@@ -83,11 +87,14 @@
 .github-button {
   color: white;
   background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
-  padding: 0.5rem 1rem; /* Smaller padding */
-  border-radius: 20px; /* Smaller border radius */
+  padding: 0.5rem 1rem;
+  /* Smaller padding */
+  border-radius: 20px;
+  /* Smaller border radius */
   border: none;
   cursor: pointer;
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 0.9rem;
+  /* Smaller font size */
   transition: transform 0.3s ease, background-color 0.3s ease;
   margin: 10px;
 }
@@ -97,6 +104,7 @@
   transform: scale(1.05);
   margin-bottom: 10px;
 }
+
 .project-card h3 {
   color: black;
   z-index: 1000;
@@ -104,7 +112,7 @@
 
 .project-card:hover h3 {
   color: black;
-  z-index: 1001;
+  z-index: 1003;
 }
 
 .project-card.expanded h3 {
