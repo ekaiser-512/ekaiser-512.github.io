@@ -10,6 +10,7 @@ const projectCardData = [
     description: "Utilized Javascript, HTML and CSS to create an inclusive blog for parents returning to work after parental leave",
     githubLink: 'https://github.com/ekaiser-512/Rally-',
   },
+
   {
     projectId: 2,
     projectName: "Capstone - Recipedia",
@@ -31,12 +32,14 @@ const projectCardData = [
     githubLink: 'https://github.com/ekaiser-512/java-dictionary',
 
   },
+
   {
     projectId: 5,
     projectName: "League Manager App",
     description: "Partner project with Zach Kapalka to create an app that utilizes CRUD functionality. ",
     githubLink: 'https://github.com/ekaiser-512/LeagueManagerApp',
   },
+
   {
     projectId: 6,
     projectName: "Portfolio Code",

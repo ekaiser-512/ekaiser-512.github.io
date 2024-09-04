@@ -20,7 +20,7 @@ const ProjectCard = ({ projectName, description, githubLink, videoSrc, isExpande
       <a href={githubLink} target="blank" rel="noopener noreferrer" className="github-button-link" onClick={handleLinkClick}>
         <button className="github-button">View Code</button>
       </a>
-      {isExpanded && <video className="project-video" src={videoSrc} controls />}
+      {isExpanded && videoSrc && <video className="project-video" src={videoSrc} controls />}
     </div>
   );
 };
