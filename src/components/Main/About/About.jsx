@@ -1,6 +1,5 @@
 import React from 'react';
 import IMG_1341 from '../../../assets/IMG_1341.jpg';
-import EKResume2024 from '../../../../public/EKResume2024.pdf'
 import './About.css'; // Import the new CSS file
 
 const About = () => {
